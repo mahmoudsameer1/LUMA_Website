@@ -26,8 +26,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.LUMA.actionInterface.ActionInterface;
 import com.LUMA.base.Base;
 
-
-
 public class Action extends Base implements ActionInterface {
 
 	@Override
@@ -47,14 +45,14 @@ public class Action extends Base implements ActionInterface {
 
 	@Override
 	public String getText(WebElement ele) {
-		
+
 		boolean flag = false;
 
 		String text = ele.getText();
 		return text;
-		
+
 	}
-	
+
 	@Override
 	public boolean findElement(WebDriver driver, WebElement ele) {
 		boolean flag = false;
@@ -147,7 +145,7 @@ public class Action extends Base implements ActionInterface {
 		}
 		return flag;
 	}
-	
+
 	@Override
 	public boolean selectBySendkeys(String value, WebElement ele) {
 		boolean flag = false;
@@ -733,10 +731,10 @@ public class Action extends Base implements ActionInterface {
 		String currentDate = new SimpleDateFormat("yyyy-MM-dd-hhmmss").format(new Date());
 		return currentDate;
 	}
-	
+
 	@Override
 	public int returnlist(List<WebElement> productItems) {
-		
+
 		List<WebElement> myList = productItems;
 		int actsize = myList.size();
 		return actsize;
